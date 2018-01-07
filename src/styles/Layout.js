@@ -2,6 +2,35 @@ import React, { Component } from 'react';
 import './Layout.css';
 import Sidebar from './Sidebar';
 
+const sideBarContent = (
+    <ul>
+    <li>
+      <strong>Category 1</strong>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Category 2</strong>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Category 3</strong>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </li>
+  </ul>
+)
+
 class Layout extends Component {
   constructor(props) {
   super(props);
@@ -27,7 +56,7 @@ class Layout extends Component {
         className="content"
         >
         { openSideDrawer &&
-          <Sidebar /> 
+          <Sidebar content={sideBarContent} title="Admin" /> 
         }
         <header id="header" style={{left : toggleWidth}} >
           <div style={{backgroundColor: 'rgb(119, 143, 156)'}} className="mui-appbar mui--appbar-line-height">
@@ -37,8 +66,7 @@ class Layout extends Component {
               
               <a onClick={()=>this.onChangeSideDrawer()} className="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
               
-              
-              
+    
               <span className="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">Brand.io</span>
             </div>
           </div>

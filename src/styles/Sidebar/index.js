@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 
 class Sidebar extends Component {
     render() {
+      const {title, content} = this.props;
+      
       return (
         <div id="sidedrawer" className="mui--no-user-select">
           <div id="sidedrawer-brand" className="mui--appbar-line-height">
-            <span className="mui--text-title">Admin</span>
+            <span className="mui--text-title">{title}</span>
           </div>
           <div className="mui-divider"></div>
-          <ul>
+          {content}
+          {/* <ul>
             <li>
               <strong>Category 1</strong>
               <ul>
@@ -33,7 +36,7 @@ class Sidebar extends Component {
                 <li><a href="#">Item 3</a></li>
               </ul>
             </li>
-          </ul>
+          </ul> */}
         </div>
       );
     }
