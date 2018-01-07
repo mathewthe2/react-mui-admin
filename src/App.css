@@ -93,21 +93,21 @@
  }
  
  @media (min-width: 768px) {
-   #header {
+   /* #header {
      left: 200px;
-   }
+   } */
    
    #sidedrawer {
      transform: translate(200px);
    }
    
-   #content-wrapper {
+   /* #content-wrapper {
      margin-left: 200px;
-   }
+   } */
    
-   #footer {
+   /* #footer {
      margin-left: 200px;
-   }
+   } */
    
    body.hide-sidedrawer #header {
      left: 0;
