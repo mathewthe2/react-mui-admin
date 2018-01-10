@@ -1,32 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
-
 /**
  * Body CSS
  */
@@ -147,6 +118,13 @@
   .mui-appbar {
    background-color: rgb(119, 143, 156);
   }
+
+  .sidedrawer-subtitle {
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+  }
  
  .sidedrawer-toggle {
    color: #fff;
@@ -157,7 +135,7 @@
  }
  
  .sidedrawer-toggle:hover {
-   color: #fff;
+   color: rgba(255, 255, 255, 0.29);
    text-decoration: none;
  }
  
@@ -194,6 +172,8 @@
  
  #sidedrawer strong + ul > li {
    padding: 6px 0px;
+   transform: translate(40px);
+   transition: transform 0.2s;
  }
  
  

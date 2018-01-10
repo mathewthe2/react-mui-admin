@@ -1,0 +1,13 @@
+.strong {
+   display: block;
+   padding: 15px 22px;
+   cursor: pointer;
+ }
+ 
+.strong:hover {
+   background-color: #E0E0E0;
+ }
+ 
+.strong + ul > li {
+   padding: 6px 0px;
+ }
